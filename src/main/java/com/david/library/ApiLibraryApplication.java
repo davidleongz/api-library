@@ -1,4 +1,4 @@
-package com.david.library.apilibrary;
+package com.david.library;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
