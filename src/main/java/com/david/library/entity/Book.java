@@ -10,7 +10,6 @@ public class Book {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	
 	private Long id;
 
 	private String title;
@@ -45,7 +44,6 @@ public class Book {
 				+ pages + ", genre=" + genre + ", year=" + year + "]";
 	}
 
-	
 	public Long getId() {
 		return id;
 	}

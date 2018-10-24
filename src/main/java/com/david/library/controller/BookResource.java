@@ -56,17 +56,17 @@ public class BookResource {
 
 	}
 	
-	@PutMapping("/students/{id}")
-	public ResponseEntity<Object> updateStudent(@RequestBody Book student, @PathVariable long id) {
+	@PutMapping("/books/{id}")
+	public ResponseEntity<Object> updateBook(@RequestBody Book book, @PathVariable long id) {
 
-		Optional<Book> studentOptional = bookRepository.findById(id);
+		Optional<Book> bookOptional = bookRepository.findById(id);
 
-		if (!studentOptional.isPresent())
+		if (!bookOptional.isPresent())
 			return ResponseEntity.notFound().build();
 
-		student.setId(id);
+		book.setId(id);
 		
-		bookRepository.save(student);
+		bookRepository.save(book);
 
 		return ResponseEntity.noContent().build();
 	}
