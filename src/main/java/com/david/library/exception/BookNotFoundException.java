@@ -2,7 +2,10 @@ package com.david.library.exception;
 
 public class BookNotFoundException extends RuntimeException {
 
-	public BookNotFoundException(String exception) {
+	private static final long serialVersionUID = 1L;
+
+	public BookNotFoundException(final String exception) {
+
 		super(exception);
 	}
 
